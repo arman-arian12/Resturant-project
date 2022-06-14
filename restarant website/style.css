@@ -1,0 +1,387 @@
+html{
+    scroll-behavior:smooth;
+}
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+
+/* font-family: 'Handlee', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */
+}
+
+.row{
+    width: 100%;
+}
+.row::after{
+    clear: both;
+    display: block;
+    content: '';
+}
+/* for mobile */
+[class*="col-"]{
+    width:100%;
+}
+
+
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+    text-align: center;
+}
+    
+/* hader start  */
+
+header{
+    background-color: #24a19c;
+    padding: 0 1%;
+    text-align: center;
+}
+
+.logo{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    /* padding: 10px; */
+
+}
+
+nav ul li{
+    display: block;
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    line-height: 70px;
+    font-weight: lighter;
+    padding: 0px 20px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+    transition: .4s;
+}
+
+nav ul li a:hover{
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+} 
+/* hader end  */
+
+
+
+/* banner start */
+
+#banner-section{
+    background-image: url(image/restarunt.avif);
+    background-position: center;
+    background-attachment:fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+ .banner-contents{
+    padding: 50px 10px;
+    text-align: center;
+}
+
+ .banner-contents h1{
+    width: 100%;
+    margin: 50px auto;
+    font-size: 3rem;
+    background: rgba(255,255,0,0.884);
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Handlee', cursive;
+} 
+
+ .banner-contents p{
+    width: 300px;
+    margin: 15px auto;
+    background: rgba(0,128,0);
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+} 
+
+.btn{
+    width: 160px;
+    padding: 10px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 5px;
+    background: rgba(0,128,0);
+    text-transform: uppercase;
+    transition: .4s;
+    color:white;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+} 
+
+/* banner end */
+
+
+
+/* about us section start */
+
+#about-us{
+    padding: 1%;
+}
+
+.about-us-contants{
+    text-align:center;
+} 
+
+.about-us-contants h3{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight:bolder;
+} 
+
+.about-us-contants p{
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+/* about us section end */
+
+
+/* food menu section start  */
+#menu-section{
+    padding: 1%;
+}
+
+
+.card-body{
+    text-align: center;
+}
+
+.card-body img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.item-desc{
+    background: rgb(165,164,164);
+}
+
+.item-name{
+    background: green;
+    color: white;
+    padding: 10px;
+}
+
+.item-desc > p{
+    font-size: 0.8rem;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.card{
+    transition: 0.4s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+
+/* food menu section end  */
+
+/* comtact section start */
+
+#contact{
+    padding: 1%;
+    background: #595b83;
+}
+
+.map{
+    width: 100%;
+    height:250px;
+}
+
+.contact-details{
+    color:white;
+    padding: 20px 0;
+    /* text-align: center; */
+}
+
+.contact-details p, address{
+    font-size:0.8rem;
+}
+/* comtact section end */
+
+/* footer start */
+
+
+footer{
+    padding: 1%;
+    color:white;
+    background: #060930;
+}
+
+footer p{
+    line-height:32px;
+    font-size: 0.8rem;
+    text-align:center;
+}
+
+.social-menus{
+    text-align:center;
+}
+
+.icon-style{
+    color:white ;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius:50% ;
+    border: 1px solid white;
+    margin: 0 10px;
+    /* padding: 5px; */
+    transition: .4s;
+    text-align: center;
+}
+
+.icon-style:hover{
+    background-color: gray;
+    transform:scale( 1.2);
+}
+/* footer end */
+
+
+/* small devices large phones 576px */
+
+@media (min-width:576px) {
+
+.col-sm-1 {width: 8.33%;}
+.col-sm-2 {width: 16.66%;}
+.col-sm-3 {width: 25%;}
+.col-sm-4 {width: 33.33%;}
+.col-sm-5 {width: 41.66%;}
+.col-sm-6 {width: 50%;}
+.col-sm-7 {width: 58.33%;}
+.col-sm-8 {width: 66.66%;}
+.col-sm-9 {width: 75%;}
+.col-sm-10 {width: 83.33%;}
+.col-sm-11 {width: 91.66%;}
+.col-sm-12 {width: 100%;}
+}
+
+/* mediam device 768 */
+
+@media (min-width:768) {
+
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+    }
+
+
+    
+/* large device device 992 */
+
+@media  (min-width:992) {
+
+ 
+    .col-lg-1 {width: 8.33%;}
+    .col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg-11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;}
+
+
+
+
+       /* hadder start */
+       .logo-div{
+        text-align: left;
+    }
+
+    nav ul{
+        text-align: right;
+    }
+
+    nav ul li{
+        display:inline-block;
+    }
+
+    nav ul li a{
+        display:inline-block;
+        /* transition: .4s; */
+    }
+
+    nav ul li a:hover{
+        background-color: transparent;
+        transform: scale(1.2);
+        text-decoration: underline;
+        border-radius: 0;
+    }
+
+    /* hadder end */
+
+
+    /* banner start */
+
+    #banner-section{
+        position: relative;
+        height:100vh'
+    }
+
+    .banner-contents{
+        position: relative;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+    }
+
+.banner-contents h1{
+    width:700px;
+    font-size: 3.5rem;
+}
+
+.banner-contents p{
+    width:500px;
+    font-size: 2rem;
+}
+ /* banner end */
+
+ /* footer start */
+footer p{
+    text-align: left;
+}
+
+
+.social-menus{
+    text-align: right;
+}
+ /* footer end */
+
+}
